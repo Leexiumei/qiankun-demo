@@ -1,0 +1,21 @@
+{
+  "name": "qiankun-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@vue/cli-plugin-eslint": "^4.5.12",
+    "@vue/eslint-config-airbnb": "^5.3.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.23.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-vue": "^7.8.0",
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "start": "npm-run-all --parallel start:*",
+    "start:sub-vue": "cd micros/sub-vue && yarn start",
+    "start:multi-vue": "cd micros/multi-vue && yarn start",
+    "start:main": "cd main && yarn start"
+  }
+}
